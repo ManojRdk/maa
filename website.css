@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1000vh;
+}
+.container-bar{
+    position: relative;
+    background: #03052D;
+    height: 41%;
+    width: 100%;
+    margin: 0;
+ }
+ .container-bar img{
+    padding-left: 116px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: center;
+ }
+ .image img{
+    margin: 18px 88px;
+ }
+ .image h1{
+    margin:3px 126px;
+    color: #2C2C2C;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ .image p{
+    margin:13px 40px;
+    color: #2C2C2C;
+    font-family:arial;
+    font-size: 12px;
+    font-weight:lighter;
+ }
+ .container {
+    position:absolute;
+    width: 100%;
+    height: 1000vh;
+    background: rgba(3, 5, 45, 0.07);
+  }
+
+  .box-google{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-google img{
+    margin: 25px 5%;
+  }
+  .box-google h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-google h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .google-share{
+    margin:-135px 310px;
+  }
+
+  .box-chrome{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-chrome img{
+    margin: 25px 5%;
+  }
+  .box-chrome h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-chrome h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .chrome-share{
+    margin:-135px 310px;
+  }
+
+  .box-opera{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-opera img{
+    margin: 25px 5%;
+  }
+  .box-opera h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-opera h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .opera-share{
+    margin:-135px 310px;
+  }
+
+  .box-firefox{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-firefox img{
+    margin: 25px 5%;
+  }
+  .box-firefox h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-firefox h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .firefox-share{
+    margin:-135px 310px;
+  }
+
+  .box-ucbrower{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-ucbrower img{
+    margin: 25px 5%;
+  }
+  .box-ucbrower h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-ucbrower h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .ucbrower-share{
+    margin:-135px 310px;
+  }
+
+  .box-amazonmusic{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-amazonmusic img{
+    margin: 25px 5%;
+  }
+  .box-amazonmusic h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-amazonmusic h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .amazonmusic-share{
+    margin:-135px 310px;
+  }
+
+  .box-vidmate{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-vidmate img{
+    margin: 25px 5%;
+    border-radius: 8px;
+  }
+  .box-vidmate h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-vidmate h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .vidmate-share{
+    margin:-135px 310px;
+  }
+
+  .box-microsoftedge{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-microsoftedge img{
+    margin: 25px 5%;border-radius: 45px;
+  }
+  .box-microsoftedge h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-microsoftedge h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .microsoftedge-share{
+    margin:-135px 310px;
+  }
+
+  .box-safari{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-safari img{
+    margin: 25px 5%;
+    border-radius: 45px;
+  }
+  .box-safari h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-safari h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .safari-share{
+    margin:-135px 310px;
+  }
+
+  .box-internetexplorer{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-internetexplorer img{
+    margin: 25px 5%;border-radius: 45px;
+  }
+  .box-internetexplorer h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-internetexplorer h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .internetexplorer-share{
+    margin:-135px 310px;
+  }
+
+  .box-barve{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-barve img{
+    margin: 25px 5%;
+  }
+  .box-barve h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-barve h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .barve-share{
+    margin:-135px 310px;
+  }
+
+  .box-vivadi{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-vivadi img{
+    margin: 25px 5%;
+    border-radius: 45px;
+    
+  }
+  .box-vivadi h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-vivadi h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .vivadi-share{
+    margin:-135px 310px;
+  }
+
+  .box-duckduckgo{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-duckduckgo img{
+    margin: 25px 5%;
+  }
+  .box-duckduckgo h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-duckduckgo h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .duckduckgo-share{
+    margin:-135px 310px;
+  }
+
+  .box-chrominum{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-chrominum img{
+    margin: 25px 5%;
+  }
+  .box-chrominum h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-chrominum h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .chrominum-share{
+    margin:-135px 310px;
+  }
+
+  .box-epic{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-epic img{
+    margin: 25px 5%;
+  }
+  .box-epic h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-epic h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .epic-share{
+    margin:-135px 310px;
+  }

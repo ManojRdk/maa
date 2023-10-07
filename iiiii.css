@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+body {
+   height: 100vh;
+}
+.container-bar{
+    position: relative;
+    background: #03052D;
+    height: 41%;
+    width: 100%;
+    margin: 0;
+ }
+ .container-bar img{
+    padding-left: 50%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: center;
+ }
+ .image img{
+    margin: 18px 60px;
+ }
+ .image h1{
+    margin:3px 126px;
+    color: #2C2C2C;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ .image p{
+    margin:13px 40px;
+    color: #2C2C2C;
+    font-family:arial;
+    font-size: 12px;
+    font-weight:lighter;
+ }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBar {
+    width: 90%;
+    background-color: #eee;
+    border-radius: 3px;
+    margin-top: 4%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px;
+    
+}
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+.glass:hover {
+    color: orangered;
+    cursor: pointer;
+}
+.data {
+    width: 73%;
+    border-radius: 3px;
+    height: 92vh;
+    overflow-y: auto;
+}
+#root {
+    width: 50%;
+    display: grid;
+}
+.box {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2 {
+    font-size: 20px;
+    color: orangered;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.box-spotify{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-spotify img{
+    margin: 25px 5%;
+  }
+  .box-spotify h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-spotify h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .spotify-share{
+    margin:-135px 310px;
+  }
+
+  .box-wynk{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-wynk img{
+    margin: 25px 5%;
+  }
+  .box-wynk h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-wynk h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .wynk-share{
+    margin:-135px 310px;
+  }
+
+  .box-youtubemusic{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-youtubemusic img{
+    margin: 25px 5%;
+  }
+  .box-youtubemusic h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-youtubemusic h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .youtubemusic-share{
+    margin:-135px 310px;
+  }
+
+  .box-gaana{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-gaana img{
+    margin: 25px 5%;
+  }
+  .box-gaana h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-gaana h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .gaana-share{
+    margin:-135px 310px;
+  }
+
+  .box-mimusic{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-mimusic img{
+    margin: 25px 5%;
+  }
+  .box-mimusic h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-mimusic h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .mimusic-share{
+    margin:-135px 310px;
+  }
+
+  .box-amazonmusic{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-amazonmusic img{
+    margin: 25px 5%;
+  }
+  .box-amazonmusic h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-amazonmusic h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .amazonmusic-share{
+    margin:-135px 310px;
+  }
+
+  .box-hungama{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-hungama img{
+    margin: 25px 5%;
+  }
+  .box-hungama h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-hungama h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .hungama-share{
+    margin:-135px 310px;
+  }
+
+  .box-musicappstream{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-musicappstream img{
+    margin: 25px 5%;
+  }
+  .box-musicappstream h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-musicappstream h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .musicappstream-share{
+    margin:-135px 310px;
+  }
+
+  .box-musicplayer{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-musicplayer img{
+    margin: 25px 5%;
+  }
+  .box-musicplayer h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-musicplayer h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .musicplayer-share{
+    margin:-135px 310px;
+  }
+
+  .box-jiosaavn{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-jiosaavn img{
+    margin: 25px 5%;
+  }
+  .box-jiosaavn h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-jiosaavn h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .jiosaavn-share{
+    margin:-135px 310px;
+  }
+
+  .box-ressomusic{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-ressomusic img{
+    margin: 25px 5%;
+  }
+  .box-ressomusic h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-ressomusic h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .ressomusic-share{
+    margin:-135px 310px;
+  }
+
+  .box-soundcloud{
+    width: 94%;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin: 15px 11px;
+  }
+  .box-soundcloud img{
+    margin: 25px 5%;
+  }
+  .box-soundcloud h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:-115px 135px;
+  }
+  .box-soundcloud h2{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding: 90px 100px;
+  }
+  .soundcloud-share{
+    margin:-135px 310px;
+  }

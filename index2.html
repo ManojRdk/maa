@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkify page</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@700;900&family=Rowdies&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" name="" id="check">
+    <div class="container">
+        <label for="check">
+            <span class="fas fa-times" id="times"></span>
+            <span class="fas fa-bars" id="bars"></span>
+        </label>
+            <ol>
+               
+            <li><a href="socialmedia.html"><i class="bx bxl-meta"></i>Social media</a></li>
+            <li><a href="music.html"><i class="bx bx-music icon"></i>Music</a></li>
+            <li><a href="website.html"><i class="bx bxl-internet-explorer icon"></i>Websites</a></li>
+            <li><a href="shopping.html"><i class="bx bxl-shopify icon'"></i>Shopping</a></li>
+            <li><a href="#"><i class="bx bxs-graduation icon"></i>Online Courses</a></li>
+            <li><a href="#"><i class="bx bxl-99designs icon'"></i>Designs</a></li>
+            <li><a href="#"><i class="bx bx-code-alt icon"></i>Coding</a></li>
+        </ol>
+    </div>
+
+        <!--content-->
+
+     <section class="home">
+        <div class="container-bar">
+            <img src="Group 2.svg" alt="" height="30">
+            <div class="text">   
+                <h1>Explore Linkify Online,</h1> 
+                <h2>the ultimate tool for</h2>
+                <h3>seamless link sharing</h3> 
+                <h4> and organization.</h4> 
+            </div>
+            
+        </div>
+        <ol class="box">
+            <li class="search">
+                <i class='bx bx-search'></i>
+                <input class="search" placeholder="Search..." id="searchBar" name="searchBar" type="text">
+            </li>
+        </ol>
+        <div class="containerm">
+            
+            <a href="socialmedia.html">
+            <button class="social">#social media</button></a>
+            <a href="shopping.html">
+            <button class="social">#shopping</button></a>
+            <a href="website.html">
+            <button class="social">#Websites</button></a>
+            <a href="music.html">
+            <button class="social">#Music</button> </a>  
+            
+
+          
+    
+                <div class="body">
+                    <div id="root"></div>
+                </div>
+            </div>
+        
+    
+        <script>
+            const product = [
+                {
+                    id: 0,
+                    home:'instagram',
+                    image: 'instagram-icon.png',
+                    title: 'Instagram',
+                    "link": 'www.instagram.com',
+                    url:'https://www.instagram.com/', 
+                    share:'link-share.png',
+                },
+                {
+                    id: 1,
+                    home:'linkedin',
+                    image: 'linkedin-main.png',
+                    title: 'Linkedin',
+                    link: 'www.linkedin.com',
+                    url:'https://www.linkedin.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 2,
+                    home:'pinterest',
+                    image: 'pinterest-img.png',
+                    title: 'Pinterest',
+                    link: "www.pinterest.com",
+                    url:'https://www.pinterest.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 3,
+                    home:'youtube',
+                    image: 'youtube-img.png',
+                    title: 'Youtube',
+                    link: 'www.youtube.com',
+                    url:'https://www.youtube.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 4,
+                    home:'tiktok',
+                    image: 'tiktok-img.png',
+                    title: 'Tik tok',
+                    link : 'www.tiktok.com',
+                    url:'https://www.tiktok.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 5,
+                    home:'snapchat',
+                    image: 'snapchat-img.png',
+                    title: 'Snapchat',
+                    link : 'www.snapchat.com',
+                    url:'https://www.snapchat.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 6,
+                    home:'whatsapp',
+                    image: 'whatsapp-link.png',
+                    title: 'Whatsapp',
+                    link : 'www.whatsapp.com',
+                    url:'https://www.whatsapp.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 7,
+                    home:'twitter',
+                    image: 'twitter-img.png',
+                    title: 'Twitter',
+                    link : 'www.twitter.com',
+                    url:'https://www.twitter.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 8,
+                    home:'facebook',
+                    image: 'facebook.png',
+                    title: 'Facebook',
+                    link : 'www.facebook.com',
+                    url:'https://www.facebook.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 9,
+                    home:'amazonmusic',
+                    image: 'amazon-mus.jpeg',
+                    title: 'Amazonmusic',
+                    link : 'www.amazon.com',
+                    url:'https://www.amazon.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 10,
+                    home:'gaana',
+                    image: 'gaana-img.jpeg',
+                    title: 'Gaana',
+                    link : 'www.gaana.com',
+                    url:'https://www.gaana.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 11,
+                    home:'github',
+                    image: 'githubb.png',
+                    title: 'Github',
+                    link : 'www.github.com',
+                    url:'https://www.github.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 12,
+                    home:'line',
+                    image: 'line-img.png',
+                    title: 'Line',
+                    link : 'www.line.com',
+                    url:'https://www.line.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 13,
+                    home:'zomato',
+                    image: 'zomato.jpeg',
+                    title: 'zomato',
+                    link : 'www.zomato.com',
+                    url:'https://www.zomato.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 14,
+                    home:'mesenger',
+                    image: 'mesenger-img.png',
+                    title: 'Messenger',
+                    link : 'www.mesenger.com',
+                    url:'https://www.messenger.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 15,
+                    home:'mimus',
+                    image: 'mimus.jpeg',
+                    title: 'MImusic',
+                    link : 'www.mimusic.com',
+                    url:'https://www.mimusic.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 16,
+                    home:'skype',
+                    image: 'skype-img.png',
+                    title: 'Skype',
+                    link : 'www.skype.com',
+                    url:'https://www.skype.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 17,
+                    home:'spotify',
+                    image: 'spotify-img.png',
+                    title: 'Spotify',
+                    link : 'www.spotify.com',
+                    url:'https://www.spotify.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 18,
+                    home:'telegram',
+                    image: 'telegram-img.png',
+                    title: 'Telegram',
+                    link : 'www.telegram.com',
+                    url:'https://www.telegram.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 19,
+                    home:'threads',
+                    image: 'threads-img.png',
+                    title: 'Threads',
+                    link : 'www.threads.com',
+                    url:'https://www.threads.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 20,
+                    home:'viber',
+                    image: 'viber-img.png',
+                    title: 'Viber',
+                    link : 'www.viber.com',
+                    url:'https://www.viber.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 21,
+                    home:'wechat',
+                    image: 'wechat-img.png',
+                    title: 'Wechat',
+                    link : 'www.wechat.com',
+                    url:'https://www.wechat.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 22,
+                    home:'wynk',
+                    image: 'wnk.jpeg',
+                    title: 'Wynk',
+                    link : 'www.wynk.com',
+                    url:'https://www.wynk.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 23,
+                    home:"ytmusic",
+                    image: 'YT-img.jpeg',
+                    title: 'Ytmusic',
+                    link : 'www.Ytmusic.com',
+                    url:'https://www.Ytmusic.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 24,
+                    home:"hungama",
+                    image: 'hug.jpeg',
+                    title: 'Hungama',
+                    link : 'www.hungama.com',
+                    url:'https://www.hungama.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 25,
+                    home:"musicappstream",
+                    image: 'musicapp.jpeg',
+                    title: 'Musicappstream',
+                    link : 'www.musicapp.com',
+                    url:'https://www.musicappstream.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 26,
+                    home:"musicplayer",
+                    image: 'mu.jpeg',
+                    title: 'Musicplayer',
+                    link : 'www.musicplay.com',
+                    url:'https://www.musicplay.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 27,
+                    home:"jiosaavn",
+                    image: 'jio.jpeg',
+                    title: 'Jiosaavn',
+                    link : 'www.jiosaavn.com',
+                    url:'https://www.jiosaavn.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 28,
+                    home:"ressomusic",
+                    image: 'resso.jpeg',
+                    title: 'Ressomusic',
+                    link : 'www.resso.com',
+                    url:'https://www.ressomusic.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 29,
+                    home:"soundcloud",
+                    image: 'sound.jpeg',
+                    title: 'Soundcloud',
+                    link : 'www.soundcld.com',
+                    url:'https://www.soundcloud.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 30,
+                    home:"amazon",
+                    image: 'amazon-img.png',
+                    title: 'Amazon',
+                    link : 'www.amazon.com',
+                    url:'https://www.amazon.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 31,
+                    home:"flipkart",
+                    image: 'flipkart-img.jpeg',
+                    title: 'Flipkart',
+                    link : 'www.flipkart.com',
+                    url:'https://www.flipkart.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 32,
+                    home:"meesho",
+                    image: 'messho.jpeg',
+                    title: 'Meesho',
+                    link : 'www.meesho.com',
+                    url:'https://www.meesho.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 33,
+                    home:"myntra",
+                    image: 'myntra.jpeg',
+                    title: 'Myntra',
+                    link : 'www.myntra.com',
+                    url:'https://www.myntra.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 34,
+                    home:"ajio",
+                    image: 'ajio.jpeg',
+                    title: 'Ajio',
+                    link : 'www.ajio.com',
+                    url:'https://www.ajio.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 35,
+                    home:"snapdeal",
+                    image: 'snapdael.jpeg',
+                    title: 'Snapdeal',
+                    link : 'www.snapdeal.com',
+                    url:'https://www.snapdeal.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 36,
+                    home:"swiggy",
+                    image: 'swiggy.jpeg',
+                    title: 'Swiggy',
+                    link : 'www.swiggy.com',
+                    url:'https://www.swiggy.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 37,
+                    home:"bigbasket",
+                    image: 'bigbas.jpeg',
+                    title: 'Bigbasket',
+                    link : 'www.bigbasket.com',
+                    url:'https://www.bigbasket.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 38,
+                    home:"bigbazzar",
+                    image: 'bigbazzar.jpeg',
+                    title: 'Bigbazzar',
+                    link : 'www.bigbazzar.com',
+                    url:'https://www.bigbazzar.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 39,
+                    home:"ebay",
+                    image: 'ebay-bla.png',
+                    title: 'Ebay',
+                    link : 'www.ebay.com',
+                    url:'https://www.ebay.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 40,
+                    home:"tira",
+                    image: 'tira.jpeg',
+                    title: 'Tira',
+                    link : 'www.tira.com',
+                    url:'https://www.tira.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 41,
+                    home:"lenskart",
+                    image: 'lenskart.jpeg',
+                    title: 'Lenskart',
+                    link : 'www.lenskart.com',
+                    url:'https://www.lenskart.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 42,
+                    home:"olx",
+                    image: 'olx.jpeg',
+                    title: 'Olx',
+                    link : 'www.olx.com',
+                    url:'https://www.olx.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 43,
+                    home:"tatacliq",
+                    image: 'tattta.jpeg',
+                    title: 'Tatacliq',
+                    link : 'www.tatacliq.com',
+                    url:'https://www.tatacliq.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 44,
+                    home:"shopify",
+                    image: 'shopify.png',
+                    title: 'Shopify',
+                    link : 'www.shopify.com',
+                    url:'https://www.shopify.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 45,
+                    home:"shoppingzone",
+                    image: 'shoopingzone.jpeg',
+                    title: 'Shoppingzone',
+                    link : 'www.shopping.com',
+                    url:'https://www.shoppingzone.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 46,
+                    home:"naaptol",
+                    image: 'naaptol.jpeg',
+                    title: 'Naaptol',
+                    link : 'www.naaptol.com',
+                    url:'https://www.naaptol.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 47,
+                    home:"shopsy",
+                    image: 'shopsy.jpeg',
+                    title: 'Shopsy',
+                    link : 'www.shopsy.com',
+                    url:'https://www.shopsy.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 48,
+                    home:"max",
+                    image: 'max.jpeg',
+                    title: 'Max',
+                    link : 'www.max.com',
+                    url:'https://www.max.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 49,
+                    home:"lazada",
+                    image: 'lazada.jpeg',
+                    title: 'Lazada',
+                    link : 'www.lazada.com',
+                    url:'https://www.lazada.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 50,
+                    home:"google",
+                    image: 'google.png',
+                    title: 'Google',
+                    link : 'www.google.com',
+                    url:'https://www.google.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 51,
+                    home:"chromee",
+                    image: 'chrome.png',
+                    title: 'Chrome',
+                    link : 'www.chrome.com',
+                    url:'https://www.chrome.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 52,
+                    home:"opera",
+                    image: 'opera.png',
+                    title: 'Opera',
+                    link : 'www.opera.com',
+                    url:'https://www.opera.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 53,
+                    home:"firefox",
+                    image: 'firefox.png',
+                    title: 'firefox',
+                    link : 'www.firefox.com',
+                    url:'https://www.firefox.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 54,
+                    home:"uc",
+                    image: 'ucbrowser.jpeg',
+                    title: 'Ucbrowser',
+                    link : 'www.Ucbrowser.com',
+                    url:'https://www.ucbrowser.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 55,
+                    home:"vidmate",
+                    image: 'vidmate.jpeg',
+                    title: 'Vidmate',
+                    link : 'www.vidmate.com',
+                    url:'https://www.vidmate.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 56,
+                    home:"microsoft",
+                    image: 'microsoft.jpeg',
+                    title: 'Microsoft',
+                    link : 'www.microsoft.com',
+                    url:'https://www.microsoft.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 57,
+                    home:"safari",
+                    image: 'safa.jpeg',
+                    title: 'Safari',
+                    link : 'www.safari.com',
+                    url:'https://www.safari.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 58,
+                    home:"internet",
+                    image: 'internet.jpeg',
+                    title: 'Internet',
+                    link : 'www.internet.com',
+                    url:'https://www.internet.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 59,
+                    home:"brave",
+                    image: 'brave.jpeg',
+                    title: 'Brave',
+                    link : 'www.brave.com',
+                    url:'https://www.brave.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 60,
+                    home:"vivaldi",
+                    image: 'vivaldi.jpeg',
+                    title: 'Vivaldi',
+                    link : 'www.vivaldi.com',
+                    url:'https://www.vivaldi.com/',
+                    share:'link-share.png',
+                },
+              
+                {
+                    id: 61,
+                    home:"duck",
+                    image: 'duck.jpeg',
+                    title: 'Duckduckgo',
+                    link : 'www.duck.com',
+                    url:'https://www.duckduckgocloud.com/',
+                    share:'link-share.png',
+                },
+                {
+                    id: 62,
+                    home:"chro",
+                    image: 'chromium.jpeg',
+                    title: 'Chromium',
+                    link : 'www.chromium.com',
+                    url:'https://www.duckduckgocloud.com/',
+                    share:'link-share.png',
+                },
+              
+                
+            ];
+    
+            const categories = [...new Set(product.map((item) => { return item }))]
+    
+            document.getElementById('searchBar').addEventListener('keyup', (e) => {
+                const searchData = e.target.value.toLowerCase();
+                const filteredData = categories.filter((item) => {
+                    return (
+                        item.title.toLowerCase().includes(searchData)
+                    )
+                })
+                displayItem(filteredData)
+            });
+    
+            const displayItem = (items) => {
+                document.getElementById('root').innerHTML = items.map((item) => {
+                    var { image, title, link,url,share,home} = item;
+                    return (
+                        `<div class='boxm'>
+                            <img src=${image}></img>
+                                <p>${title}</p>
+                                <h2>link : <a href=${url}><h1>${link}</h1></a></h2>
+                           <div class="share">
+                                <img src=${share} id=${home}></img>
+                             </div>   
+                        </div>`
+                    )
+                }).join('')
+            };
+            displayItem(categories);
+            
+        </script>
+            
+            
+            
+    
+    <script type="text/javascript" src="js/homepg.js">
+        
+    
+    </script>
+       
+  
+    </section>
+</body>
+</html>

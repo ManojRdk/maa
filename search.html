@@ -1,0 +1,210 @@
+<!DOCTYPE html> 
+<html>
+    <title>search</title>
+<head>
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            font-size: 18px;
+        }
+        body {
+            margin: 4vh;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+       
+        .searchBar {
+            width: 100%;
+            height: 75px;
+            background-color: #eee;
+            border-radius: 3px;
+            padding: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        input {
+            font-size: 25px;
+            padding: 9px;
+            border: none;
+            outline: none;
+            background: none;
+        }
+        
+        .data {
+            width: 73%;
+            border-radius: 3px;
+            height: 92vh;
+            overflow-y: auto;
+        }
+        #root {
+            width: 100%;
+        }
+        .box {
+            width: 100%;
+            height: 160px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #e8e0e0;
+            margin: 15px 11px;
+        }
+        .img-box img{
+            margin: 25px 5%;
+            height: 100px;
+        }
+        .images {
+            margin: 25px 5%;
+        }
+        .icon{
+            max-height: 30%;
+            max-width: 30%;
+            object-fit: cover;
+            object-position: center;
+            cursor: pointer;
+        }
+        .bottom {
+            margin-top: -110px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 110px;
+            cursor: pointer;
+        }
+        .bottom p {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 0.5px;
+        }
+        .bottom h2 {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: orangered;
+        }
+       
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+        </div>
+
+            <div class="body">
+                <div id="root"></div>
+            </div>
+        </div>
+    
+
+    <script>
+        const product = [
+            {
+                id: 0,
+                image: 'instagram-icon.png',
+                title: 'Instagram',
+                "link": 'www.instagram.com',
+                url:'https://www.instagram.com/', 
+                icon:'link-share.png',
+            },
+            {
+                id: 1,
+                image: 'linkedin-main.png',
+                title: 'linkedin',
+                link: 'www.linkedin.com',
+                url:'https://www.linkedin.com/',
+                icon:'link-share.png',
+            },
+            {
+                id: 2,
+                image: 'pinterest-img.png',
+                title: 'pinterest',
+                link: "www.pinterest.com",
+                url:'https://www.pinterest.com/',
+                icon:'link-share.png',
+            },
+            {
+                id: 3,
+                image: 'youtube-img.png',
+                title: 'youtube',
+                link: 'www.youtube.com',
+                url:'https://www.youtube.com/',
+                icon:'link-share.png',
+            },
+            {
+                id: 4,
+                image: 'tiktok-img.png',
+                title: 'tik tok',
+                link : 'www.tiktok.com',
+                url:'https://www.tiktok.com/',
+                icon:'link-share.png',
+            },
+            {
+                id: 5,
+                image: 'snapchat-img.png',
+                title: 'snapchat',
+                link : 'www.snapchat.com',
+                url:'https://www.snapchat.com/',
+                icon:'link-share.png',
+            },
+        ];
+
+        const categories = [...new Set(product.map((item) => { return item }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(searchData)
+                )
+            })
+            displayItem(filteredData)
+        });
+
+        const displayItem = (items) => {
+            document.getElementById('root').innerHTML = items.map((item) => {
+                var { image, title, link,url,icon} = item;
+                return (
+                    `<div class='box'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                            </div> 
+                            <div class='bottom'>
+                                <p>${title}</p>
+                                <h2>link :</h2>
+                                <a href=${url}><h1>${link}</h1></a>
+                                <img class='icon' id="shareBtn" src=${icon}></img>
+                            </div>
+                    </div>`
+                )
+            }).join('')
+        };
+        displayItem(categories);
+        
+    </script>
+     <script type="text/javascript" src="js/share.js">
+
+</body>
+
+</html>
